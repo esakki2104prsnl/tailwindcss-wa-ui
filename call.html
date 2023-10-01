@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Updates | WhatsApp UI</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp</title>
+    <link rel="shortcut icon" href="./assets/img/whatsapp-logo-.png" type="image/x-icon">
 
-    <link rel="icon" href="./assets/img/whatsapp-logo-.png">
+    <!-- Tailwind CSS -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <!-- CLI Tailwind -->
     <link rel="stylesheet" href="./assets/css/output.css" />
@@ -16,11 +18,13 @@
     <h1 class="mb-5 text-center">
         <a href="" class="font-bold">WhatsApp UI Challenge (Sreen #1)</a>
     </h1>
+    <!-- <img src="./assets/img/whatsapp-background.jpg" alt="" srcset="" /> -->
 
     <section class="max-w-md mx-auto my-auto">
         <!-- Logo -->
-        <div class="bg-emerald-800 text-white p-2 flex items-center justify-between">
+        <div class="bg-emerald-800 text-white p-3 flex items-center justify-between">
             <h4 class="font-bold text-2xl">WhatsApp</h4>
+
             <div class="flex items-center justify-between space-x-2">
                 <a href="https://github.com/esakki2104prsnl/tailwindcss-wa-ui" target="_blank"
                     class="hover:cursor-pointer hover:text-blue-500">
@@ -56,125 +60,78 @@
                 </svg>
             </li>
             <li class="flex flex-1 justify-between pt-2 pl-2 pr-2 pb-1 hover:cursor-pointer">
+
                 <a href="./index.html">
-                    <div class="flex items-center ">
+                    <div class="flex items-center">
                         <span class="p-1">Chats</span>
                         <span
                             class="bg-white text-emerald-600 p-1 rounded-full w-6 h-6 flex justify-center items-center">
-                            2
+                            10
                         </span>
                     </div>
                 </a>
 
                 <a href="./update.html">
-                    <div class="flex items-center relative">
-                        <span class="p-1 items-center ">
+                    <div class="flex items-center ">
+                        <span class="p-1 items-center">
                             Updates
                         </span>
-                        <h1 class="bg-gray-200  rounded-full w-2 h-2 flex items-center">
-                        </h1>
-                        <div class="absolute top-8 w-11/12 h-1 bg-white"></div>
+                        <span class="bg-gray-200  rounded-full w-2 h-2 flex items-center"></span>
                     </div>
                 </a>
 
-                <a href="./call">
-                    <div>
+                <a href="./call.html">
+                    <div class="relative">
                         <span class="flex p-1 ">
                             Calls
                         </span>
+                        <div class="absolute top-8  w-11/12 h-1 bg-white"></div>
                     </div>
                 </a>
             </li>
         </ul>
 
-        <!-- Updates -->
-        <hr>
-        <div class=" bg-white ">
-            <!-- <div class="bg-gray-400 p-0.5"></div> -->
-            <div class="flex items-center justify-between">
-                <p class="font-bold p-3 ">Status</p>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="32" viewBox="0 0 20 20 "
-                    class=" text-gray-500">
-                    <path fill="currentColor"
-                        d="M10 12a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0-6a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0 12a2 2 0 1 1 0-4a2 2 0 0 1 0 4z" />
-                </svg>
-            </div>
-
-            <div class="p-2 space-x-3 flex items-center hover:cursor-pointer hover:bg-gray-100">
-                <div class="relative">
-                    <img src=" ./assets/img/user-profile.jpg " alt=" esakki" width="50"
-                        class=" rounded-full border-green-600 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                        class="absolute bottom-0 left-7 bg-white rounded-full text-green-600">
+        <!-- Chats -->
+        <div class="bg-white h-96">
+            <div class="bg-white flex p-4 items-center hover:cursor-pointer hover:bg-gray-200 ">
+                <div class="bg-green-300 rounded-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
                         <path fill="currentColor"
-                            d="M11 17h2v-4h4v-2h-4V7h-2v4H7v2h4v4Zm1 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z" />
+                            d="M11 17H7q-2.075 0-3.538-1.463T2 12q0-2.075 1.463-3.538T7 7h4v2H7q-1.25 0-2.125.875T4 12q0 1.25.875 2.125T7 15h4v2Zm-3-4v-2h8v2H8Zm5 4v-2h4q1.25 0 2.125-.875T20 12q0-1.25-.875-2.125T17 9h-4V7h4q2.075 0 3.538 1.463T22 12q0 2.075-1.463 3.538T17 17h-4Z" />
                     </svg>
                 </div>
-                <div class="flex-1 p-2">
-                    <h2 class="font-bold">My Status</h2>
-                    <p class="text-gray-500">Tab to add status update</p>
+                <div class="p-2">
+                    <p class="font-bold">Create call link</p>
+                    <p class="text-gray-500 text-sm">Share a link for your WhatsApp call</p>
                 </div>
             </div>
 
-            <div>
-                <p class="text-sm font-semibold pl-3 text-gray-500">Recent updates</p>
-                <hr>
-            </div>
-
-            <div class="flex items-center">
-                <div class=" p-2">
-                    <img src="./assets/img/Abraham.jpeg" alt="Abraham" width="50"
-                        class="rounded-full border-2 p-0.5 border-green-600">
-                    <p>FXEC..</p>
+            <div class=" p-2 space-x-2 flex items-center hover:cursor-pointer hover:bg-gray-200 ">
+                <div>
+                    <img src="./assets/img/karthik-mame.jpeg" alt="🚘🔥mamae" class=" rounded-full" width="64"
+                        height="64">
                 </div>
-                <div class=" p-2">
-                    <img src="./assets/img/karthik-mame.jpeg" alt="karthik-mame" width="50"
-                        class="rounded-full border-2 p-0.5 border-green-600">
-                    <p>karth...</p>
+                <div class="flex-1">
+                    <h2 class="font-semibold">🚘🔥Karthik Mamae</h2>
+                    <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            class="bg-green-500">
+                            <path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z" />
+                        </svg>
+                        <p class="text-gray-500">September 29, 8:30</p>
+                    </div>
                 </div>
-                <div class=" p-2">
-                    <img src="./assets/img/saravana-mamae.jpeg" alt="saravana-mamae" width="50"
-                        class="rounded-full border-2 p-0.5 border-green-600">
-                    <p>Sara...</p>
-                </div>
-                <div class=" p-2">
-                    <img src="./assets/img/user-profile.jpg" alt="sudha" width="50"
-                        class="rounded-full border-2 p-0.5 border-green-600">
-                    <p>Suda..</p>
-                </div>
-                <div class=" p-2">
-                    <img src="./assets/img/ras.jpeg" alt="sulthana" width="50"
-                        class="rounded-full border-2 p-0.5 border-green-600">
-                    <p>Ras...</p>
-                </div>
-                <div class=" p-2">
-                    <img src="./assets/img/cyber-dude-logo.jpg" alt="anbu" width="50"
-                        class="rounded-full border-2 p-0.5 border-green-600">
-                    <p>Anbu</p>
-                </div>
-                <div class=" p-2">
-                    <img src="./assets/img/gokul.jpeg" alt="gokul" width="50"
-                        class="rounded-full border-2 p-0.5 border-green-600">
-                    <p>Goks</p>
+                <div class>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.95 21q-3.125 0-6.175-1.363t-5.55-3.862q-2.5-2.5-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.338t.712-.062l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3Z" />
+                    </svg>
                 </div>
             </div>
-
-            <hr class="p-2">
-
-            <div class="flex items-center justify-between">
-                <p class=" font-bold p-2 text-lg text-black">Channels</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                    <path fill="currentColor"
-                        d="M11 13H6q-.425 0-.713-.288T5 12q0-.425.288-.713T6 11h5V6q0-.425.288-.713T12 5q.425 0 .713.288T13 6v5h5q.425 0 .713.288T19 12q0 .425-.288.713T18 13h-5v5q0 .425-.288.713T12 19q-.425 0-.713-.288T11 18v-5Z" />
-                </svg>
-
-            </div>
-        </div>
-
 
         </div>
     </section>
+
 </body>
 
 </html>
