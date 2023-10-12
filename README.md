@@ -1,6 +1,8 @@
 # Interactive WhatsApp UI Build using Tailwind CSS
 
-![Project Logo/Preview Image](./assets/img/output.png)
+   ### Preview Imgae
+
+   ![Preview Image](./assets/img/output.png)
 
 ## Project Description
 
